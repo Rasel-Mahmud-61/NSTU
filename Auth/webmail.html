@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noakhali Science and Technology University</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #6ab7ff, #d7e7ff);
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+            margin-bottom: 30px; /* Space between sections */
+        }
+
+        .container h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            border: 2px solid #6ab7ff;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #6ab7ff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .links a:hover {
+            background: #6ab7ff;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Webmail login form styling */
+        .login-container {
+            background: #fff;
+            max-width: 500px;
+            width: 90%;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .login-container button {
+            background-color: #6ab7ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .login-container button:hover {
+            background-color: #5b9ee8;
+        }
+
+        .login-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Welcome Section -->
+    <div class="container">
+        <h1>Welcome to Noakhali Science and Technology University</h1>
+        <p class="countdown" id="countdown">Excellence through innovation and dedication</p>
+        <div class="links">
+            <a href='../index.html'><i class="fas fa-home"></i></a>
+            <a href="../index.html" target="_blank"><i class="fas fa-graduation-cap"></i> NSTU-RPS</a>
+            <a href="../about/contact-us.html" target="_blank"><i class="fas fa-envelope"></i> Contact Us</a>
+            <a href="../index.html" target="_blank"><i class="fas fa-user"></i> Official Website</a>
+        </div>
+        <footer>
+            &copy; 2024 Noakhali Science and Technology University. All Rights Reserved.
+        </footer>
+    </div>
+
+    <!-- Webmail Login Section -->
+    <div class="login-container">
+        <h1>Webmail Login</h1>
+        <form id="login-form" name="login-form" method="post" action="./?_task=login">
+            <input type="hidden" name="_token" value="iwheIwFX3kvPt7c11ZeqngPpvB8hguH2">
+            <input type="hidden" name="_task" value="login">
+            <input type="hidden" name="_action" value="login">
+            <input type="hidden" name="_timezone" id="rcmlogintz" value="_default_">
+            <input type="hidden" name="_url" id="rcmloginurl" value="">
+
+            <div>
+                <label for="rcmloginuser" style="display: block; font-weight: bold; margin-bottom: 5px;">Username</label>
+                <input type="text" name="_user" id="rcmloginuser" required autocomplete="off">
+            </div>
+
+            <div>
+                <label for="rcmloginpwd" style="display: block; font-weight: bold; margin-bottom: 5px;">Password</label>
+                <input type="password" name="_pass" id="rcmloginpwd" required autocomplete="off">
+            </div>
+
+            <button type="submit" id="rcmloginsubmit">Login</button>
+
+            <div class="login-footer">
+                NSTU Webmail
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Simple countdown functionality (optional)
+        document.addEventListener('DOMContentLoaded', () => {
+            const countdownElement = document.getElementById('countdown');
+            countdownElement.textContent = "Transforming education for the betterment of the future.";
+        });
+    </script>
+
+</body>
+
+</html>

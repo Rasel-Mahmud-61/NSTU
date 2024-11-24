@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noakhali Science and Technology University Search Page</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('search-btn').addEventListener('click', function () {
+                const query = document.getElementById('search-input').value.trim();
+                const resultsContainer = document.getElementById('results');
+
+                // Clear previous results
+                resultsContainer.innerHTML = '';
+
+                if (query) {
+                    // Simulating a search result
+                    const fakeResults = [
+                        `Result for "${query}" - Academic Calendar`,
+                        `Result for "${query}" - Course Details`,
+                        `Result for "${query}" - Faculty Contact`,
+                    ];
+
+                    fakeResults.forEach(result => {
+                        const resultDiv = document.createElement('div');
+                        resultDiv.style.cssText = `
+                            background-color: #fff;
+                            margin: 10px 0;
+                            padding: 15px;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                        `;
+                        resultDiv.textContent = result;
+                        resultsContainer.appendChild(resultDiv);
+                    });
+                } else {
+                    const noResult = document.createElement('div');
+                    noResult.style.cssText = `
+                        background-color: #fff;
+                        margin: 10px 0;
+                        padding: 15px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    `;
+                    noResult.textContent = 'Please enter a search query.';
+                    resultsContainer.appendChild(noResult);
+                }
+            });
+        });
+    </script>
+</head>
+<body style="
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    color: #333;
+">
+    <header style="
+        text-align: center;
+        padding: 20px 10px;
+        background-color: #00ffe5;
+        color: #fff;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    ">
+        <h1>University Search</h1>
+        <p>Find the information you're looking for!</p>
+    </header>
+    <main style="
+        margin: 20px;
+        display: flex;
+        gap: 10px;
+    ">
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Type your query..." 
+            style="
+                width: 300px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            "
+        />
+        <button 
+            id="search-btn" 
+            style="
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            "
+            onmouseover="this.style.backgroundColor='#0056b3'"
+            onmouseout="this.style.backgroundColor='#007bff'"
+        >
+            Search
+        </button>
+    </main>
+    <div id="results" style="
+        margin-top: 20px;
+        width: 80%;
+        max-width: 800px;
+    "></div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+/* #Base 960 Grid
+================================================== */
+
+.containers {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.containers .column,
+.containers .columns {
+    float: left;
+    display: inline;
+    /*margin-left: 10px; margin-right: 10px;*/
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+/* Nested Column Classes */
+
+.column.alpha,
+.columns.alpha {
+    margin-left: 0;
+}
+
+.column.omega,
+.columns.omega {
+    margin-right: 0;
+}
+
+/* Base Grid */
+
+.containers .one.column,
+.containers .one.columns {
+    width: 40px;
+}
+
+.containers .two.columns {
+    width: 100px;
+}
+
+.containers .three.columns {
+    width: 160px;
+}
+
+.containers .four.columns {
+    width: 240px;
+}
+
+.containers .five.columns {
+    width: 280px;
+}
+
+.containers .six.columns {
+    width: 340px;
+}
+
+.containers .seven.columns {
+    width: 400px;
+}
+
+.containers .eight.columns {
+    width: 460px;
+}
+
+.containers .nine.columns {
+    width: 520px;
+}
+
+.containers .ten.columns {
+    width: 580px;
+}
+
+.containers .eleven.columns {
+    width: 640px;
+}
+
+.containers .twelve.columns {
+    width: 720px;
+}
+
+.containers .thirteen.columns {
+    width: 760px;
+}
+
+.containers .fourteen.columns {
+    width: 820px;
+}
+
+.containers .fifteen.columns {
+    width: 880px;
+}
+
+.containers .sixteen.columns {
+    width: 960px;
+}
+
+.containers .one-third.column {
+    width: 300px;
+}
+
+.containers .two-thirds.column {
+    width: 620px;
+}
